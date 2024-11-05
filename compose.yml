@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./servers.json:/app/servers.json
+    environment:
+      - NTFY_URL=https://ntfy.example.com/alerting
+      - POLL_INTERVAL=60
+    restart: unless-stopped

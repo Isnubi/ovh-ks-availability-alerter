@@ -1,0 +1,6 @@
+[
+	{
+		"name": "KS-A",
+		"url": "https://eu.api.ovh.com/v1/dedicated/server/datacenter/availabilities?datacenters=rbx%2Csbg%2Cgra&server=24ska01"
+	}
+]
