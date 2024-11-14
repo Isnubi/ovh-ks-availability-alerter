@@ -7,9 +7,12 @@ name: Docker image build for OVH KS availability alerter
 
 on:
   push:
-    branches: [ "main" ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
+  pull_request:
+    branches: [ "main" ]
+    types:
+      - closed
 
 env:
   # Use docker.io for Docker Hub if empty
