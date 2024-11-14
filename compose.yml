@@ -1,8 +1,6 @@
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/isnubi/ovh-ks-availability-alerter:latest
     volumes:
       - ./servers.json:/app/servers.json
     environment:
